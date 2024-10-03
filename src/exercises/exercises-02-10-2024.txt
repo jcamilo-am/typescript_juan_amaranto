@@ -1,0 +1,32 @@
+Exercises Ts
+
+1.
+a. Agg por medio de push 10, 12, 15, 16, 17
+b. Eliminar el ultimo elemento con pop
+c. Encontrar el indice de los elementos 1, 4, 7
+d. Extraer una parte del array con slice de posicion 2 a 9
+e. Verficar si todos los elementos son mayores que uno con every
+f. Verificar si algun elemento sea mayor o igual que 7 con some
+
+2. 
+a. Agg al array por medio de push el 10, 11, 12, 13, 14 en string
+b. Encontrar el indice de los elementos el 10, 11 y 14
+
+3. 
+a. Dividir la cadena en un array de palabras donde el separador sea el espacio por splice
+b. Aplicarle join al resultado del anterior (array) que quede un array separado por comas
+
+4.
+a. Dividir la cadena en un array de palabras donde el separador sean las comas usando splice
+b. Aplicar join a este mismo donde separe las palabras por espacios
+
+5.
+a. Vamos a filtrar en una constante donde el price sea mayor de 900 por medio de filter y por medio de un for
+b. Encontrar el primer objeto del array donde el priceDiscount sea mayor a 500 por medio de find
+c. Encontrar el indice del primer elemento del array donde el price sea mayor que 1000 por medio findIndex
+d. Agregarle 3 objetos de un producto de una tienda por medio de push
+
+6.
+a. Concatenar el array 1 con el array 2 por medio de concat y push
+b. A la constante generada vamos a ordenar de mayor a menor por sort votando otra constante
+c. A la constante generada del primer punto ordenarla de menor a mayor por reverse

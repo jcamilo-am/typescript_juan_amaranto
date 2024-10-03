@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs", //sitema de modulos para node.js
+    "removeComments": true,
+    "moduleResolution": "node", //indica como buscar los archivos de los modulos que se importan
+    "allowSyntheticDefaultImports": true, //importar modulos de una manera sencilla
+    "noUnusedLocals": true, //error en variables sin usar
+    "noUnusedParameters": true, //error en parametros sin usar
+    "sourceMap": true, 
+    "target": "ES2016", //version de javascript
+    "outDir": "./build",
+    "baseUrl": "./",
+    "resolveJsonModule": true, //permitir importaciones de archivos json
+    "paths": {
+      "Modules/": ["src/modules/*"] //abreviaciones de direcciones
+    }
+  },
+  "lib": ["es2016", "dom"],
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules/**/*",
+    ".vscode/**/*"
+  ]
+}
