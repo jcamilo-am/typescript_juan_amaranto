@@ -35,8 +35,18 @@ console.log(nameToArray, 'nameToArray\n');
 const nameJoined = nameToArray.join(' ');
 console.log(nameJoined, 'nameJoined\n');
 const arrayProducts = [
-    { id: 1, name: 'Arroz', price: 1000, priceDescount: 700 },
-    { id: 2, name: 'Atun', price: 2500, priceDescount: 1500 },
+    {
+        id: 1,
+        name: 'Arroz',
+        price: 1000,
+        priceDescount: 700,
+    },
+    {
+        id: 2,
+        name: 'Atun',
+        price: 2500,
+        priceDescount: 1500,
+    },
 ];
 const pricesAboveNineHundred = arrayProducts.filter((item) => item.price > 900);
 console.log(pricesAboveNineHundred, 'pricesAboveNineHundred\n');

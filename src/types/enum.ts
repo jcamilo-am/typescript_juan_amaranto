@@ -7,5 +7,5 @@ enum Color {
 }
 
 // Uso de enum
-let colorFavorito: Color = Color.Rojo;
+const colorFavorito: Color = Color.Rojo;
 console.log(colorFavorito);

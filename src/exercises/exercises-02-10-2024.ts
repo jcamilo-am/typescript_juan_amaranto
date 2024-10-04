@@ -18,7 +18,7 @@ console.log(indexOf4, 'indexOf4');
 console.log(indexOf7, 'indexOf7\n');
 
 // d.
-const arrayOfSlice = auxNumber.slice(2, 9);
+const arrayOfSlice: number[] = auxNumber.slice(2, 9);
 console.log(arrayOfSlice, 'arrayOfSlice\n');
 
 // e.
@@ -35,7 +35,6 @@ const auxString: string[] = ['1', '2', '3', '4', '5', '6', '7'];
 // a.
 auxString.push('10', '11', '12', '13', '14');
 console.log(auxString, 'auxString\n');
-
 
 // b.
 const indexOf10: number = auxString.indexOf('10');
@@ -68,16 +67,27 @@ const nameJoined: string = nameToArray.join(' ');
 console.log(nameJoined, 'nameJoined\n');
 
 // 5.
-const arrayProducts: any[] =  [
-    { id: 1, name: 'Arroz', price: 1000, priceDescount: 700 },
-    { id: 2, name: 'Atun', price: 2500, priceDescount: 1500 },
-]
+const arrayProducts: any[] = [
+    {
+        id: 1,
+        name: 'Arroz',
+        price: 1000,
+        priceDescount: 700,
+    },
+    {
+        id: 2,
+        name: 'Atun',
+        price: 2500,
+        priceDescount: 1500,
+    },
+];
 
 // a.
 const pricesAboveNineHundred: any[] = arrayProducts.filter((item) => item.price > 900);
 console.log(pricesAboveNineHundred, 'pricesAboveNineHundred\n');
 const pricesAboveNineHundred2: any[] = [];
-for (let i = 0; i < arrayProducts.length; i++) {
+let i: number = 0;
+for (i = 0; i < arrayProducts.length; i + 1) {
     if (arrayProducts[i].price > 900) {
         pricesAboveNineHundred2.push(arrayProducts[i]);
     }
@@ -85,18 +95,33 @@ for (let i = 0; i < arrayProducts.length; i++) {
 console.log(pricesAboveNineHundred2, 'pricesAboveNineHundred2\n');
 
 // b.
-const priceDescountAboveFiveHundred: any = arrayProducts.find(item => item.priceDescount > 500);
+const priceDescountAboveFiveHundred: any = arrayProducts.find((item) => item.priceDescount > 500);
 console.log(priceDescountAboveFiveHundred, 'priceDescountAboveFiveHundred\n');
 
 // c.
-const priceAboveOneThousand: number = arrayProducts.findIndex(item => item.price > 1000);
+const priceAboveOneThousand: number = arrayProducts.findIndex((item) => item.price > 1000);
 console.log(priceAboveOneThousand, 'priceAboveOneThousand\n');
 
 // d.
 arrayProducts.push(
-    { id: 3, name: 'Pasta', price: 1500, priceDescount: 1000 },
-    { id: 4, name: 'Salsa', price: 2000, priceDescount: 1800 },
-    { id: 5, name: 'Mayonesa', price: 3000, priceDescount: 2000 },
+    {
+        id: 3,
+        name: 'Pasta',
+        price: 1500,
+        priceDescount: 1000,
+    },
+    {
+        id: 4,
+        name: 'Salsa',
+        price: 2000,
+        priceDescount: 1800,
+    },
+    {
+        id: 5,
+        name: 'Mayonesa',
+        price: 3000,
+        priceDescount: 2000,
+    },
 );
 console.log(arrayProducts, 'arrayProducts\n');
 

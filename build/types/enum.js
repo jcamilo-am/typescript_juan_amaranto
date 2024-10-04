@@ -4,6 +4,6 @@ var Color;
     Color["Verde"] = "Verde";
     Color["Azul"] = "Azul";
 })(Color || (Color = {}));
-let colorFavorito = Color.Rojo;
+const colorFavorito = Color.Rojo;
 console.log(colorFavorito);
 //# sourceMappingURL=enum.js.map

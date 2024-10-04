@@ -1,41 +1,34 @@
 {
-  "parser": "@typescript-eslint/parser", // Especifica el parser de TypeScript para que ESLint entienda el código TypeScript.
-  "extends": [
-      "airbnb-base", // Reglas de estilo de código de Airbnb (JavaScript).
-      "airbnb-typescript/base", // Reglas específicas de Airbnb para TypeScript.
-      "eslint:recommended", // Conjunto de reglas recomendadas por ESLint.
-      "plugin:@typescript-eslint/recommended" // Reglas recomendadas específicas para TypeScript.
-  ],
-  "parserOptions": {
-      "project": "./tsconfig.json", // Ruta al archivo de configuración de TypeScript.
-      "tsconfigRootDir": "./", // Establece el directorio raíz para la configuración de TypeScript.
-      "sourceType": "module" // Permite el uso de importaciones de módulos ES.
-  },
-  "rules": {
-      "import/prefer-default-export": "off", // Desactiva la preferencia por exportaciones por defecto.
-      "class-methods-use-this": "off", // Desactiva la regla que exige el uso de 'this' en métodos de clase.
-      "import/no-extraneous-dependencies": "off", // Desactiva la regla que prohíbe dependencias no declaradas.
-      "no-param-reassign": "off", // Desactiva la regla que prohíbe reasignaciones de parámetros.
-      "no-throw-literal": "off", // Desactiva la regla que prohíbe lanzar literales.
-      "@typescript-eslint/no-throw-literal": "off", // Desactiva la regla de TypeScript que prohíbe lanzar literales.
-      "no-restricted-syntax": "off", // Desactiva la regla que prohíbe ciertas sintaxis restrictivas.
-      "max-len": "off", // Desactiva la regla que limita la longitud de las líneas de código.
-      "no-console": "off", // Permite el uso de console.
-      "prefer-const": "off", // Desactiva la regla que sugiere el uso de const.
-      "@typescript-eslint/explicit-function-return-type": "off", // Permite omitir el tipo de retorno en funciones.
-      "@typescript-eslint/explicit-module-boundary-types": "off", // Permite omitir el tipo de las fronteras de los módulos.
-      "@typescript-eslint/no-explicit-any": "off", // Permite el uso de 'any' en TypeScript.
-      "eol-last": "off", // Desactiva la regla que exige una nueva línea al final de los archivos.
-      "@typescript-eslint/no-inferrable-types": "off", // Permite tipos inferibles en TypeScript.
-      "quotes": ["error", "single"], // Exige el uso de comillas simples para cadenas.
-      "indent": ["error", "tab"], // Usa tabuladores para la indentación (puedes cambiar a 4 si prefieres espacios).
-      "@typescript-eslint/indent": ["error", 4], // Usa cuatro espacios para la indentación en TypeScript.
-      "object-curly-spacing": ["error", "always"], // Requiere espacio después de abrir `{` y antes de cerrar `}` en objetos.
-      "@typescript-eslint/object-curly-spacing": ["error", "always"], // Requiere espacio en TypeScript igual que en JavaScript.
-      "no-tabs": "off" // Desactiva la regla que prohíbe tabuladores
-
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "airbnb-base",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./",
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 4], // Establece la indentación en 4 espacios
+        "quotes": ["error", "single"], // Usa comillas simples
+        "no-console": "off", // Permite el uso de console
+        "@typescript-eslint/no-explicit-any": "off", // Permite el uso de 'any'
+        "@typescript-eslint/no-inferrable-types": "off",// apaga la regla que obliga a especificar el tipo de las variables
+        "@typescript-eslint/explicit-module-boundary-types": "error", // Exige tipos en exportaciones de módulos
+        "no-shadow": "off", // Desactiva la regla de no permitir sombrear variables
+        "@typescript-eslint/typedef": [
+        "error",
+        {
+            "parameter": true, // Exige tipos en parámetros de funciones
+            "propertyDeclaration": true, // Exige tipos en propiedades de clases
+            "variableDeclaration": true, // Exige tipos en declaraciones de variables
+            "memberVariableDeclaration": true, // Exige tipos en variables miembro de clases
+            "functionDeclaration": true, // Exige tipos en declaraciones de funciones
+            "typeParameter": true // Exige tipos en parámetros de tipo
+        }
+    ]
+    }
   }
-}
-
-
-
+  
