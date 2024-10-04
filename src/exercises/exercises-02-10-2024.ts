@@ -34,6 +34,8 @@ const auxString: string[] = ['1', '2', '3', '4', '5', '6', '7'];
 
 // a.
 auxString.push('10', '11', '12', '13', '14');
+console.log(auxString, 'auxString\n');
+
 
 // b.
 const indexOf10: number = auxString.indexOf('10');

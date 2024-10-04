@@ -17,6 +17,7 @@ const someAbovenSeven = auxNumber.some((value) => value >= 7);
 console.log(someAbovenSeven, 'someAbovenSeven\n');
 const auxString = ['1', '2', '3', '4', '5', '6', '7'];
 auxString.push('10', '11', '12', '13', '14');
+console.log(auxString, 'auxString\n');
 const indexOf10 = auxString.indexOf('10');
 const indexOf11 = auxString.indexOf('11');
 const indexOf14 = auxString.indexOf('14');
