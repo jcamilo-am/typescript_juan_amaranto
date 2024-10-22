@@ -1,9 +1,9 @@
-var Color;
-(function (Color) {
-    Color["Rojo"] = "Rojo";
-    Color["Verde"] = "Verde";
-    Color["Azul"] = "Azul";
-})(Color || (Color = {}));
-const colorFavorito = Color.Rojo;
+var ColorEnum;
+(function (ColorEnum) {
+    ColorEnum["Rojo"] = "Rojo";
+    ColorEnum["Verde"] = "Verde";
+    ColorEnum["Azul"] = "Azul";
+})(ColorEnum || (ColorEnum = {}));
+const colorFavorito = ColorEnum.Rojo;
 console.log(colorFavorito);
 //# sourceMappingURL=enum.js.map

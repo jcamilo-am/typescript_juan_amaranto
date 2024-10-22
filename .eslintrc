@@ -14,10 +14,11 @@
         "indent": ["error", 4], // Establece la indentación en 4 espacios
         "quotes": ["error", "single"], // Usa comillas simples
         "no-console": "off", // Permite el uso de console
+        "no-shadow": "off", // apaga la regla de no sombreado de variables
+        "max-classes-per-file": ["error", 4], // Establece un máximo de 2 clases por archivo
         "@typescript-eslint/no-explicit-any": "off", // Permite el uso de 'any'
         "@typescript-eslint/no-inferrable-types": "off",// apaga la regla que obliga a especificar el tipo de las variables
         "@typescript-eslint/explicit-module-boundary-types": "error", // Exige tipos en exportaciones de módulos
-        "no-shadow": "off", // Desactiva la regla de no permitir sombrear variables
         "@typescript-eslint/typedef": [
         "error",
         {

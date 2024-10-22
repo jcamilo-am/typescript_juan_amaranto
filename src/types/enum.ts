@@ -1,11 +1,9 @@
 // enum es un tipo de dato que permite definir un conjunto de constantes con nombre
 
-enum Color {
+enum ColorEnum {
     Rojo = 'Rojo',
     Verde = 'Verde',
     Azul = 'Azul',
 }
-
-// Uso de enum
-const colorFavorito: Color = Color.Rojo;
+const colorFavorito: ColorEnum = ColorEnum.Rojo;
 console.log(colorFavorito);

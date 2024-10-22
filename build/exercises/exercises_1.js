@@ -51,17 +51,33 @@ const arrayProducts = [
 const pricesAboveNineHundred = arrayProducts.filter((item) => item.price > 900);
 console.log(pricesAboveNineHundred, 'pricesAboveNineHundred\n');
 const pricesAboveNineHundred2 = [];
-for (let i = 0; i < arrayProducts.length; i++) {
+let i = 0;
+for (i = 0; i < arrayProducts.length; i + 1) {
     if (arrayProducts[i].price > 900) {
         pricesAboveNineHundred2.push(arrayProducts[i]);
     }
 }
 console.log(pricesAboveNineHundred2, 'pricesAboveNineHundred2\n');
-const priceDescountAboveFiveHundred = arrayProducts.find(item => item.priceDescount > 500);
+const priceDescountAboveFiveHundred = arrayProducts.find((item) => item.priceDescount > 500);
 console.log(priceDescountAboveFiveHundred, 'priceDescountAboveFiveHundred\n');
-const priceAboveOneThousand = arrayProducts.findIndex(item => item.price > 1000);
+const priceAboveOneThousand = arrayProducts.findIndex((item) => item.price > 1000);
 console.log(priceAboveOneThousand, 'priceAboveOneThousand\n');
-arrayProducts.push({ id: 3, name: 'Pasta', price: 1500, priceDescount: 1000 }, { id: 4, name: 'Salsa', price: 2000, priceDescount: 1800 }, { id: 5, name: 'Mayonesa', price: 3000, priceDescount: 2000 });
+arrayProducts.push({
+    id: 3,
+    name: 'Pasta',
+    price: 1500,
+    priceDescount: 1000,
+}, {
+    id: 4,
+    name: 'Salsa',
+    price: 2000,
+    priceDescount: 1800,
+}, {
+    id: 5,
+    name: 'Mayonesa',
+    price: 3000,
+    priceDescount: 2000,
+});
 console.log(arrayProducts, 'arrayProducts\n');
 const array01 = [1, 2, 3, 4];
 const array02 = [6, 7, 8, 9];
@@ -74,4 +90,4 @@ const arrayConcatSort = arrayConcat.sort((a, b) => a - b);
 console.log(arrayConcatSort, 'arrayConcatSort\n');
 const arraySortReverse = arrayConcatSort.reverse();
 console.log(arraySortReverse, 'arraySortReverse\n');
-//# sourceMappingURL=exercises-02-10-2024.js.map
+//# sourceMappingURL=exercises_1.js.map
